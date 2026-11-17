@@ -1,4 +1,4 @@
-# Página web - Roll the Firlm
+# Página web - Roll the Film
 
 
 Este proyecto es desarrollado para el negocio de Fatima Segura Romero. Con el fin de vender posters y cuadros fotográficos relacionados al cine
