@@ -19,71 +19,144 @@
 
 <body>
 
-    <!--===========ENCABEZADO DE LA PÁGINA=============-->
-    <header class="header-Roll the Film">
-        <div class="container header-inicio">
-            <a href="#inicio" class="logo-Roll the Film">
-                <img src="img/logo.png.png" alt="logo de Roll the Film">
-            </a>
-
-         <nav class="nav-Roll the Film">
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-
-                <button type="button" class="btn primary" onclick="openWhatsApp('Hola, quiero hacer el pedido de un poster.')">
-            <i data-lucide="message-circle"></i> Enviar mensaje
-        </button>
+<!--==========ENCABEZADO DE LA PÁGINA==========-->
+        <header class="header-Roll">
+            <div class="container header-inicio">
+                <a href="#inicio" class="logo-Roll">
+                    <img src="img/logo.png.png" alt="logo de Static Club">
+                </a>
 
 
-            </nav>  
+                <nav class="nav-Roll">
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#productos">Productos</a></li>
+                        <li><a href="#beneficios">Beneficios</a></li>
+                        <li><a href="#oferta">Oferta</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+
+                    </ul>
+                    <button type="button" class="btn primary" onclick="openWhatsApp('Hola, quiero hacer un pedido en Roll the Film.')">
+                    <i data-lucide="message-circle"></i> Enviar mensaje
+
+                    </nav>
+
 
 
             </div>
+        </header>
 
-
-
-    </header>
-
-<!--========= CONTENIDO PRINCIPAL ==========-->
+<!--===== CONTENIDO PRINCIPAL =====-->
 
 <main>
 
-<!--========= SECCIÓN DE GIRO ==========-->
-  <section id="inicio" class="hero">
-      <div class="container hero-inicio">
-        <div class="hero-text">
-          <p class="eyebrow">Every frame tells a story.</p>
-          <h1>Roll the Film</h1>
-          <p class="lead">Promociona tus productos, recibe pedidos y haz que tus clientes te encuentren desde cualquier lugar.</p>
 
-
-          <div class="hero-actions">
-            <a href="#productos" class="btn primary">Ver productos</a>
-            <button type="button" class="btn outline" onclick="openWhatsApp('Hola, vi su página y me gustaría conocer sus regalos personalizados.')">Comprar por WhatsApp</button>
-          </div>
-
-
-          <p class="trust"><i data-lucide="heart"></i> Más de 200 detalles entregados</p>
-        </div>
-
-
-        <div class="hero-imagen">
-          <img src="XXX" alt="XXXXX">
-          <span class="tag tag-love">Hecho con cariño</span>
-          <span class="tag tag-custom">Pedidos personalizados</span>
-        </div>
-      </div>
+  <!--========= SECCIÓN DE HERO ==========-->
+  <section class="intro" aria-labelledby="intro-title">
+      <p class="intro-eyebrow">BIENVENIDO A ROLL THE FILM</p>
+      <h1 class="intro-title" id="intro-title">CONECTA<br><span>CON PELICULAS</span></h1>
+      <p class="intro-description">Crear arte visual que convierta momentos e historias en recuerdos eternos</p>
     </section>
 
-<p>Every frame tells a story.</p>
-<h1>Roll the Film</h1>
+
+
+<!--========= AQUÍ VAMOS A COLOCAR EL VIDEO Y LAS TRES IMAGENES ==========-->
+
+    <!-- Galería principal: un video y dos imágenes -->
+    <section class="gallery" id="galeria" aria-label="Galería principal">
+
+
+      <!-- VIDEO -->
+      <article class="media-card media-cardvideo" data-video-card>
+        <!-- Sustituye el archivo de video por el tuyo. Se recomienda MP4  -->
+        <video
+          class="media-card media-card-video"
+          data-hover-video
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          poster="img/hero.MP4"
+          aria-label="Video de presentación">
+          <source src="img/hero.MP4" type="video/mp4">
+          Tu navegador no puede reproducir este video.
+        </video>
+
+
+        <!-- Capa oscura que permite leer el texto sobre el video -->
+        <div class="media-card__shade" aria-hidden="true"></div>
+
+
+        <!-- Texto que aparece sobre el panel -->
+        <div class="media-card__content">
+          <p class="media-card__number"> PRESENTACIÓN</p>
+          <h2 class="media-card__title">ARTE, NOSTALGIA Y EMOCIONES</h2>
+          <a class="media-card__link" href="#contacto">Descubrir <span aria-hidden="true">↗</span></a>
+        </div>
+
+
+        <!-- Control visible en pantallas táctiles y accesible con teclado -->
+        <button class="video-toggle" type="button" data-video-toggle aria-label="Reproducir video" aria-pressed="false">
+          <span class="video-toggle__icon" data-toggle-icon aria-hidden="true">▶</span>
+          <span class="video-toggle__text" data-toggle-text>Reproducir video</span>
+        </button>
+      </article>
+
+
+      <!--  IMAGEN 1-->
+      <article class="media-card">
+        <!-- Reemplaza trayectoria.jpg por el nombre de tu fotografía. -->
+        <img
+          class="media-card__media media-card__image"
+          src="img/IMG1.jpg"
+          alt="Fotografía que muestra como se ve el poster en una pared"
+          loading="lazy">
+
+
+        <div class="media-card__shade" aria-hidden="true"></div>
+
+
+        <div class="media-card__content">
+          <p class="media-card__number">02 / THE GODFATHER </p>
+          <h2 class="media-card__title">DONDE VIVE<br>EL TIEMPO</h2>
+          <a class="media-card__link" href="#contacto">Conocer más <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+
+
+      <!--  IMAGEN 2-->
+      <article class="media-card">
+        <!-- Reemplaza proyectos.jpg por el nombre de tu fotografía. -->
+        <img
+          class="media-card__media media-card__image"
+          src="img/IMG2.jpg"
+          alt="Poster de Fantastic Mr. Fox"
+          loading="lazy">
+
+
+        <div class="media-card__shade" aria-hidden="true"></div>
+
+
+        <div class="media-card__content">
+          <p class="media-card__number">03 / Fantastic Mr. Fox </p>
+          <h2 class="media-card__title">SOFT<br>MEMORIES</h2>
+          <a class="media-card__link" href="#contacto">Ver proyectos <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+
+
+    </section>
 
 
 </main>
+
+<!--  FOOTER O PIE DE PÁGINA -->
+ <footer class="site-footer">
+    <p>© <span id="current-year"></span> Roll the Film. Todos los derechos reservados.</p>
+    <a href="#inicio">Volver arriba ↑</a>
+  </footer>
+
+
 
 </body>
 </html>
