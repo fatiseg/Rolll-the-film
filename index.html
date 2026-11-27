@@ -166,10 +166,10 @@
             <img src="img/IMG2.jpg" alt="DESCRIPCIÓN">
             <div class="product-body">
               <span class="tag">Favoritos</span>
-              <h3>Fantastics Mr. Fox</h3>
+              <h3>Fantastic Mr. Fox</h3>
               <p class="price">$200 MXN</p>
               <p class="description">Wild hearts, golden days</p>
-              <button type="button" class="btn card" onclick="openModal('modal-caja')">Ver producto</button>
+              <button type="button" class="btn card" onclick="openModal('modal-Mr.Fox')">Ver producto</button>
             </div>
           </article>
 
@@ -181,7 +181,7 @@
               <h3>Bones and All</h3>
               <p class="price">$200 MXN</p>
               <p class="description">Love in the wild</p>
-              <button type="button" class="btn card" onclick="openModal('modal-caja')">Ver producto</button>
+              <button type="button" class="btn card" onclick="openModal('modal-Bones')">Ver producto</button>
             </div>
           </article>
           
@@ -193,7 +193,7 @@
               <h3>Portrait of a Lady on Fire</h3>
               <p class="price">$200 MXN</p>
               <p class="description">A love worth remembering</p>
-              <button type="button" class="btn card" onclick="openModal('modal-caja')">Ver producto</button>
+              <button type="button" class="btn card" onclick="openModal('modal-Fire')">Ver producto</button>
             </div>
           </article>
             
@@ -355,7 +355,8 @@
             <li><i data-lucide="instagram"></i> <a href="https://www.instagram.com/fseguraaa?jplx=Z3lja2ppcjNnNDI2&utm_source=qr" target="_blank" rel="noopener noreferrer">@fseguraaa</a></li>
             <li><i data-lucide="facebook"></i> <a href="https://www.facebook.com/share/18Yq9ysqLG/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">Fatima Segura</a></li>
             <li><i data-lucide="mail"></i> <a href="mailto:f.segura002@ebc.edu.mx">f.segura002@ebc.edu.mx</a></li>
-            <li><i data-lucide="clock-3"></i> Lunes a sábado, 10:00 a 19:00</li>
+            <li><i data-lucide="map"></i> <a href="https://share.google/bxbqz3NhAYblAIz4P">Cerro de las Campanas</a></li>
+            <li><i data-lucide="clock-3"></i> Lunes a sábado, 14:00 a 17:00</li>
           </ul>
         </aside>
       </div>
@@ -368,6 +369,72 @@
     <p>© <span id="current-year"></span> Roll the Film. Todos los derechos reservados.</p>
     <a href="#inicio">Volver arriba ↑</a>
   </footer>
+
+<!-- MODAL PARA LOS PRODUCTOS O SERVICIOS, ETC -->
+  <div id="modal-Mr.Fox" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-Mr.Fox-title">
+    <div class="modal-panel">
+      <div class="modal-image">
+        <img src="img/IMG2.jpg" alt="Poster de Fantastic Mr. Fox">
+        <button type="button" class="modal-close" aria-label="Cerrar producto" onclick="closeModal('modal-Mr.Fox')"><i data-lucide="x"></i></button>
+      </div>
+      <div class="modal-body">
+        <h2 id="modal-Mr.Fox">Fantastic Mr. Fox</h2>
+        <p class="price">$200 MXN</p>
+        <p>Una aventura entre tonos cálidos, nostalgia y encanto artesanal.</p>
+        <h3>Poster:</h3>
+        <ul>
+          <li>Estética otoñal y vintage.</li>
+          <li>Colores profundos y nostálgicos.</li>
+          <li>Una esencia romántica y misteriosa.</li>
+        </ul>
+        <button type="button" class="btn primary" onclick="openWhatsApp('Hola, quiero pedir un poster de Fantastic Mr. Fox)">Pedir por WhatsApp</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL PARA TARJETA 2 -->
+  <div id="modal-Bones" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-Bones">
+    <div class="modal-panel">
+      <div class="modal-image">
+        <img src="img/IMG3.jpg" alt="Poster de Bones and All">
+        <button type="button" class="modal-close" aria-label="Cerrar producto" onclick="closeModal('modal-Bones')"><i data-lucide="x"></i></button>
+      </div>
+      <div class="modal-body">
+        <h2 id="modal-Bones">Bones and All</h2>
+        <p class="price">$200 MXN</p>
+        <p>Un amor extraño, libre y perdido entre paisajes infinitos.</p>
+        <h3>Poster:</h3>
+        <ul>
+          <li>Estética indie y melancólica.</li>
+          <li>Tonos deslavados y naturales.</li>
+          <li>Perfecto para amantes del cine alternativo.</li>
+        </ul>
+        <button type="button" class="btn primary" onclick="openWhatsApp('Hola, quiero pedir un poster de Bones and All)">Pedir por WhatsApp</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL PARA TARJETA 3 -->
+  <div id="modal-Fire" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-Fire">
+    <div class="modal-panel">
+      <div class="modal-image">
+        <img src="img/IMG4.jpg" alt="Poster de Portrait of a Lady on Fire">
+        <button type="button" class="modal-close" aria-label="Cerrar producto" onclick="closeModal('modal-Fire')"><i data-lucide="x"></i></button>
+      </div>
+      <div class="modal-body">
+        <h2 id="modal-Fire">Portrair of a Lady on Fire</h2>
+        <p class="price">$200 MXN</p>
+        <p>Un retrato de amor, silencio y recuerdos que nunca se apagan.</p>
+        <h3>Poster:</h3>
+        <ul>
+          <li>Romanticismo y arte clásico.</li>
+          <li>Tonos suaves y elegantes.</li>
+          <li>Una atmósfera íntima y atemporal.</li>
+        </ul>
+        <button type="button" class="btn primary" onclick="openWhatsApp('Hola, quiero pedir un poster de Bones and All)">Pedir por WhatsApp</button>
+      </div>
+    </div>
+  </div>
 
 <script src="js/script.js"></script>
 
